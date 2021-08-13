@@ -1,5 +1,5 @@
 # 2021_OS_labs  
-This project starts an own operating system.  
+This project starts a simple operating system.  
 LAB1---Multiboot Startup  
 LAB2---MyMain(userAPP)  
 LAB3---shell & interrupt & timer  
