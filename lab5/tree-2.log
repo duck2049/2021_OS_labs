@@ -1,0 +1,110 @@
+.
+├── doc
+│   ├── 2021-07-13 22-09-41 的屏幕截图.png
+│   └── report.md
+├── src
+│   ├── Makefile
+│   ├── multibootheader
+│   │   └── multibootHeader.S
+│   ├── myOS
+│   │   ├── dev
+│   │   │   ├── i8253.c
+│   │   │   ├── i8259A.c
+│   │   │   ├── Makefile
+│   │   │   ├── uart.c
+│   │   │   └── vga.c
+│   │   ├── i386
+│   │   │   ├── CTX_SW.S
+│   │   │   ├── io.c
+│   │   │   ├── irq.S
+│   │   │   ├── irqs.c
+│   │   │   └── Makefile
+│   │   ├── include
+│   │   │   ├── i8253.h
+│   │   │   ├── i8259.h
+│   │   │   ├── io.h
+│   │   │   ├── irq.h
+│   │   │   ├── kmalloc.h
+│   │   │   ├── malloc.h
+│   │   │   ├── mem.h
+│   │   │   ├── myPrintk.h
+│   │   │   ├── string.h
+│   │   │   ├── task.h
+│   │   │   ├── uart.h
+│   │   │   ├── vga.h
+│   │   │   ├── vsprintf.h
+│   │   │   └── wallClock.h
+│   │   ├── kernel
+│   │   │   ├── Makefile
+│   │   │   ├── mem
+│   │   │   │   ├── dPartition.c
+│   │   │   │   ├── eFPartition.c
+│   │   │   │   ├── Makefile
+│   │   │   │   ├── malloc.c
+│   │   │   │   └── pMemInit.c
+│   │   │   ├── task.c
+│   │   │   ├── tick.c
+│   │   │   └── wallClock.c
+│   │   ├── lib
+│   │   │   ├── Makefile
+│   │   │   └── string.c
+│   │   ├── Makefile
+│   │   ├── myOS.ld
+│   │   ├── osStart.c
+│   │   ├── printk
+│   │   │   ├── Makefile
+│   │   │   ├── myPrintk.c
+│   │   │   ├── types.h
+│   │   │   └── vsprintf.c
+│   │   ├── start32.S
+│   │   └── userInterface.h
+│   ├── output
+│   │   ├── multibootheader
+│   │   │   └── multibootHeader.o
+│   │   ├── myOS
+│   │   │   ├── dev
+│   │   │   │   ├── i8253.o
+│   │   │   │   ├── i8259A.o
+│   │   │   │   ├── uart.o
+│   │   │   │   └── vga.o
+│   │   │   ├── i386
+│   │   │   │   ├── CTX_SW.o
+│   │   │   │   ├── io.o
+│   │   │   │   ├── irq.o
+│   │   │   │   └── irqs.o
+│   │   │   ├── kernel
+│   │   │   │   ├── mem
+│   │   │   │   │   ├── dPartition.o
+│   │   │   │   │   ├── eFPartition.o
+│   │   │   │   │   ├── malloc.o
+│   │   │   │   │   └── pMemInit.o
+│   │   │   │   ├── task.o
+│   │   │   │   ├── tick.o
+│   │   │   │   └── wallClock.o
+│   │   │   ├── lib
+│   │   │   │   └── string.o
+│   │   │   ├── osStart.o
+│   │   │   ├── printk
+│   │   │   │   └── myPrintk.o
+│   │   │   └── start32.o
+│   │   ├── myOS.elf
+│   │   └── userApp
+│   │       ├── main.o
+│   │       ├── memTestCase.o
+│   │       ├── shell.o
+│   │       └── test.o
+│   ├── README_mem.txt
+│   ├── test.log
+│   ├── test.sh
+│   └── userApp
+│       ├── main.c
+│       ├── Makefile
+│       ├── memTestCase.c
+│       ├── memTestCase.h
+│       ├── shell.c
+│       ├── shell.h
+│       ├── test.c
+│       └── test.h
+└── tree.log
+
+22 directories, 85 files
